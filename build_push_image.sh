@@ -1,16 +1,16 @@
 #!/bin/bash
 
-# 1. Membuat Docker image dari Dockerfile yang tadi dibuat, dengan nama image item-app, dan memiliki tag v1
+# 1. Build image
 docker build -t item-app:v1 .
 
-# 2. Melihat daftar image di lokal
+# 2. Melihat daftar image 
 docker images
 
-# 3. Mengubah nama image agar sesuai dengan format Docker Hub
+# 3. Mengubah nama image
 docker tag item-app:v1 robifirmansyah/item-app:v1
 
-# 4. Login ke Docker Hub via Terminal
+# 4. Login ke Docker Hub 
 docker login -u robifirmansyah
 
-# 5. Mengunggah image ke Docker Hub
+# 5. Push image ke Docker Hub
 docker push robifirmansyah/item-app:v1
