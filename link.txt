@@ -1,0 +1,3 @@
+Link image docker hub : https://hub.docker.com/repository/docker/robifirmansyah/item-app/general
+
+Pull image : docker pull robifirmansyah/item-app:v1
